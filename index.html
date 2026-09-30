@@ -123,17 +123,23 @@
 
   <script>
     (function () {
-      var message = "You're already here, so why don't you join us?";
-      var link = "→ solidgate.com/careers";
+      var headline = "You dug deeper than most.";
+      var message = "That's exactly the kind of people we're looking for.";
+      var cta = "Let's talk? → solidgate.com/careers";
 
       console.log(
-        "%c" + message,
+        "%c" + headline,
         "font-size:32px;font-weight:700;line-height:1.3;color:#000000;background:#C1DC55;" +
         "padding:20px 28px;border-radius:8px;font-family:Onest,Arial,sans-serif;"
       );
       console.log(
-        "%c" + link,
-        "font-size:18px;font-weight:600;color:#C1DC55;background:#000000;padding:10px 28px;border-radius:8px;" +
+        "%c" + message,
+        "font-size:18px;font-weight:500;color:#FFFFFF;background:#000000;padding:12px 28px;border-radius:8px;" +
+        "font-family:Inter,Arial,sans-serif;"
+      );
+      console.log(
+        "%c" + cta,
+        "font-size:18px;font-weight:600;color:#C1DC55;background:#000000;padding:12px 28px;border-radius:8px;" +
         "font-family:ui-monospace,Menlo,monospace;"
       );
     })();
