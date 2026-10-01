@@ -61,16 +61,8 @@
     line-height: 1;
     font-weight: 700;
     letter-spacing: 0.01em;
-    margin: 0 0 18px;
+    margin: 0 0 32px;
     color: var(--text);
-  }
-
-  .sub {
-    font-family: var(--body-font);
-    font-size: 14px;
-    line-height: 1.6;
-    color: #CCCCCC;
-    margin: 0 0 34px;
   }
 
   .prompt {
@@ -114,8 +106,6 @@
   <div class="frame">
     <h1>HOLD ON</h1>
 
-    <p class="sub">This page didn't load the way it was supposed to.</p>
-
     <div class="prompt">
       <span class="arrow">&gt;</span>
       <span>open the developer console<span class="cursor"></span></span>
@@ -127,13 +117,12 @@
       var headline = "You dug deeper than most.";
       var message = "That's exactly the kind of people we're looking for.";
       var cta = "Let's talk?";
-      var link = "https://solidgate.com/careers";
 
       // One console.log with line breaks, so the blocks sit together
       // instead of being split into separate console rows with dividers.
       // Chrome renders each %c span as a block: line-height + padding = block height, margin = gap.
       console.log(
-        "%c" + headline + "%c\n%c" + message + "%c\n%c" + cta + "%c\n%c" + link,
+        "%c" + headline + "%c\n%c" + message + "%c\n%c" + cta,
         "font-size:18px;font-weight:700;line-height:24px;color:#000000;background:#C1DC55;" +
         "padding:8px 20px;margin:3px 0;border-radius:6px;font-family:Onest,Arial,sans-serif;",
         "",
@@ -141,10 +130,7 @@
         "padding:6px 20px;margin:3px 0;border-radius:6px;font-family:Inter,Arial,sans-serif;",
         "",
         "font-size:15px;font-weight:600;line-height:20px;color:#FFFFFF;background:#000000;" +
-        "padding:6px 20px;margin:3px 0;border-radius:6px;font-family:Inter,Arial,sans-serif;",
-        "",
-        "font-size:12px;font-weight:600;line-height:16px;color:#C1DC55;background:#000000;" +
-        "padding:6px 20px;margin:3px 0;border-radius:6px;font-family:ui-monospace,Menlo,monospace;"
+        "padding:6px 20px;margin:3px 0;border-radius:6px;font-family:Inter,Arial,sans-serif;"
       );
     })();
   </script>
